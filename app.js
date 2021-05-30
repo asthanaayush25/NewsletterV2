@@ -29,10 +29,10 @@ app.post("/",function(req,res){
   };
   var jd=JSON.stringify(data);
   var options={
-    url:"https://us6.api.mailchimp.com/3.0/lists/d9fa676ba4",
+    url:"https://${dc}.api.mailchimp.com/3.0/lists/{list}",
     method:"POST",
     headers:{
-      "Authorization":"Hello cc1dac69c40310c27d69faf9afbd1b70-us6"
+      "Authorization":"Hello ${api}"
     },
     body:jd
   }
